@@ -2,6 +2,8 @@ baseURL = 'https://peter-wyss.ch/'
 languageCode = 'de-ch'
 title = 'Peter Wyss'
 theme = 'hugo-paper'
+[params]
+monoDarkIcon = true                       # show monochrome dark mode icon
 
 [menu]
 
