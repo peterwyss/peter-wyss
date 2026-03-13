@@ -2,3 +2,12 @@ baseURL = 'https://peter-wyss.ch/'
 languageCode = 'de-ch'
 title = 'Peter Wyss'
 theme = 'hugo-paper'
+
+[menu]
+
+  [[menu.main]]
+    identifier = "about"
+    name = "Adresse"
+    url = "/about/"
+    weight = 10
+

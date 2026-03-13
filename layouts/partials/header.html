@@ -104,12 +104,17 @@
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script>
+gsap.set("#site-title", { opacity: 1 });
+
+if (!sessionStorage.getItem("animated")) {
   gsap.from("#site-title", {
-    duration: 5,
-    x: -500,
+    duration: 3,
+    x: -400,
     opacity: 0,
     ease: "power3.out",
-    delay: 0.5
+    delay: 0.6
   });
+  sessionStorage.setItem("animated", "true");
+}
 </script>
 </header>
