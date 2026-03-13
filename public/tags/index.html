@@ -60,6 +60,7 @@
 >
   <div class="relative z-50 flex items-center ltr:mr-auto rtl:ml-auto">
     <a
+      id="site-title"
       class="-translate-y-[1px] text-2xl font-medium"
       href="http://localhost:33381/"
       >Peter Wyss</a
@@ -124,6 +125,16 @@
     class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full flex-col justify-center bg-(--bg) pb-16 duration-200 select-none lg:static lg:h-auto lg:flex-row lg:bg-transparent! lg:pb-0 lg:transition-none"
   >
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script>
+  gsap.from("#site-title", {
+    duration: 5,
+    x: -500,
+    opacity: 0,
+    ease: "power3.out",
+    delay: 0.5
+  });
+</script>
 </header>
 <main
       class="prose prose-neutral dark:prose-invert relative mx-auto min-h-[calc(100vh-9rem)] max-w-(--w) px-8 pt-14 pb-16"
