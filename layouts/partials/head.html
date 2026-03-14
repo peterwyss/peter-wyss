@@ -113,12 +113,6 @@
   <link rel="canonical" href="{{- .Permalink -}}" />
   {{- end -}}
   <!---->
-  <link 
- rel="preload"
- as="image"
- href="/images/hero-400.webp"
- imagesrcset="/images/hero-400.webp 400w,
-              /images/hero-600.webp 600w,
-              /images/hero-800.webp 800w"
- imagesizes="50vw">
+  <link rel="preload" as="image" href="/images/hero-600.webp" fetchpriority="high" />
+  
 </head>
