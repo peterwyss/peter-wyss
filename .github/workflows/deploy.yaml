@@ -20,8 +20,6 @@ jobs:
 
       - name: Build
         run: hugo --gc --minify
-      - name: Rename htaccess
-        run: mv public/htaccess public/.htaccess
 
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
