@@ -9,7 +9,7 @@ monoDarkIcon = true                       # show monochrome dark mode icon
 
   [[menu.main]]
     identifier = "about"
-    name = "Adresse"
+    name = "Kontakt"
     url = "/about/"
     weight = 10
 
