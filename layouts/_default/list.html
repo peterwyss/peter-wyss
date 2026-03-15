@@ -24,7 +24,19 @@
   <h1 class="text-4xl font-bold">{{ site.Params.heroTitle }}</h1>
   <p class="mt-4 text-lg opacity-70">{{ site.Params.heroSubtitle }}</p>
 </div>
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const hero = document.getElementById("hero");
 
+    hero.addEventListener('mouseenter', () => {
+      gsap.to("#hero", { rotation: 1125, duration: 4, ease: "power2.out" });
+    });
+
+    hero.addEventListener('mouseleave', () => {
+      gsap.to("#hero", { rotation: 0, duration: 0.4, ease: "power2.inOut" });
+    });
+  });
+</script>
 
 {{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections -}}<!---->
 {{- end -}}
