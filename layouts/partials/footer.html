@@ -17,6 +17,25 @@
     target="_blank"
     >hugo-paper</a
   >
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script>
+      window.addEventListener('DOMContentLoaded', () => {
 
+    gsap.registerPlugin(SplitText);
+    let split = SplitText.create("#site-title", { type: "chars" });
+    gsap.from(split.chars, {
+      yPercent: "random([-100, 100])",
+      rotation: "random([-30, 30])",
+      autoAlpha: 0,
+      duration: 1,
+      yoyo: true,
+      ease: "back.out",
+      stagger: {
+        amount: 0.5,
+        from: "random"
+      }
+   })
+      });
+  </script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14/dist/SplitText.min.js"></script>
 </footer>

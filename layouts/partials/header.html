@@ -102,18 +102,5 @@
     </nav>
     {{- end -}}<!---->
   </div>
-<script>
-  window.addEventListener('DOMContentLoaded', () => {
-    if (!sessionStorage.getItem("animated")) {
-      gsap.from("#site-title", {
-        duration: 1,
-        x: -100,
-        opacity: 0,
-        ease: "power3.out",
-        delay: 0.2
-      });
-      sessionStorage.setItem("animated", "true");
-    }
-  });
-</script>
+
 </header>
